@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/melhor skate.css">
+</head>
+
+<body>
+    <h1> Qual é o skate mais recomendado para você? </h1>
+
+
+    <div id="perguntas">
+
+        Descubra respondendo algumas perguntas abaixo: <br><br>
+
+        Qual sua idade? <br>
+        <input type="text" id="id_idade"> <br><br>
+
+        Qual sua altura? <br>
+        <input type="text" id="id_altura"> <br><br>
+
+        Quanto você calça? <br>
+        <input type="text" id="id_calcado"> <br><br>
+
+
+        <button onclick="resultados()">Mostrar resultados</button>
+    </div>
+
+    <div id="respostas" style="display: none;">
+
+        <div id="result"></div>
+
+        <button id="voltar" onclick="outro()">Fazer outro teste</button>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    function resultados() {
+        var idade = Number(id_idade.value);
+        var altura = Number(id_altura.value);
+        var calcado = Number(id_calcado.value)
+        var validar = idade != '' && altura != '' && calcado != ''
+
+        if (validar) {
+            perguntas.style.display = 'none'
+            respostas.style.display = 'inline'
+            tamanhos()
+        }
+
+        else { alert('Insira um valor dentro dos campos solicitados') }
+
+        function tamanhos() {
+
+            if (idade <= 8 && altura <= 1,15 && calcado <= 37) {
+                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>
+                Um truck de 129mm é o ideal para seu shape <br>`
+            }
+
+            else if(idade <= 12 && altura <= 1,35 && calcado <= 39){
+            result.innerHTML =`O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> aa`
+            }
+
+            else{
+                result.innerHTML =`O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras`
+            }
+        }
+
+    }
+
+function outro() {
+    perguntas.style.display = 'inline'
+    respostas.style.display = 'block'
+    
+
+            
+}
+</script>
