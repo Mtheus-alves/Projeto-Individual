@@ -62,3 +62,59 @@
     visibility: visible;
     z-index: 10;
 }
+
+
+
+
+
+
+
+
+
+/* Teste num 2 */
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.img_menu{
+    height: 60px;
+}
+
+
+#check{
+    display: none;
+}
+
+
+nav{
+    max-width: 350px;
+    width: 100%;
+ 
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: grey;
+    transition:background .3s;
+    padding: 20px 5px;
+}
+
+nav ul li a:hover{
+    background-color: aquamarine;
+    color: black;
+}
