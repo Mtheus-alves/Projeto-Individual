@@ -6,37 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/melhor skate.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
-    <h1> Qual é o skate mais recomendado para você? </h1>
+    <div class="menu">
+        <input type="checkbox" id="check">
+
+        <label for="check" id="icon">
+            <img src="imgs/icone.png" alt="">
+        </label>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li id="first"><a href="index.html">Home</a> </li>
+
+                    <li> <a href="">História do skate</a></li>
+
+                    <li> <a href="melhor skate.html">Skate ideial</a></li>
+
+                    <li> <a href="">Vídeo-parts</a></li>
+
+                    <li> <a href="">Contato</a></li>
+
+                    <li><a href="">Cadastro</a></li>
+
+                    <li><a href="">Login</a></li>
+                </ul>
+
+            </nav>
+        </div>
 
 
-    <div id="perguntas">
 
-        Descubra respondendo algumas perguntas abaixo: <br><br>
-
-        Qual sua idade? <br>
-        <input type="text" id="id_idade"> <br><br>
-
-        Qual sua altura? <br>
-        <input type="text" id="id_altura"> <br><br>
-
-        Quanto você calça? <br>
-        <input type="text" id="id_calcado"> <br><br>
-
-
-        <button onclick="resultados()">Mostrar resultados</button>
     </div>
 
-    <div id="respostas" style="display: none;">
 
-        <div id="result"></div>
+    <div class="skt_ideial">
+        <div class="container">
+            <h1> Qual é o skate mais recomendado para você? </h1>
 
-        <button id="voltar" onclick="outro()">Fazer outro teste</button>
 
+            <div id="perguntas">
+
+                Descubra respondendo algumas perguntas abaixo: <br><br>
+
+                Qual sua idade? <br>
+                <input type="text" id="id_idade"> <br><br>
+
+                Qual sua altura? <br>
+                <input type="text" id="id_altura"> <br><br>
+
+                Quanto você calça? <br>
+                <input type="text" id="id_calcado"> <br><br>
+
+
+                <button onclick="resultados()">Mostrar resultados</button>
+            </div>
+
+            <div id="respostas" style="display: none;">
+
+                <div id="result"></div>
+                <br><br>
+                <button id="voltar" onclick="outro()">Fazer outro teste</button>
+
+            </div>
+        </div>
     </div>
+
 </body>
 
 </html>
@@ -58,27 +96,31 @@
 
         function tamanhos() {
 
-            if (idade <= 8 && altura <= 1,15 && calcado <= 37) {
+            if (idade <= 8 && altura <= 1, 15 && calcado <= 37) {
                 result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>
                 Um truck de 129mm é o ideal para seu shape <br>`
             }
 
-            else if(idade <= 12 && altura <= 1,35 && calcado <= 39){
-            result.innerHTML =`O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> aa`
+            else if (idade <= 12 && altura <= 1, 35 && calcado <= 39) {
+                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> 
+            Um truck de 129mm é o ideal para seu shape <br>`
             }
 
-            else{
-                result.innerHTML =`O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras`
+            else {
+                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>
+                Um truck de 136mm á 149mm é o ideal para seu shape <br>`
             }
         }
 
     }
 
-function outro() {
-    perguntas.style.display = 'inline'
-    respostas.style.display = 'block'
-    
+    function outro() {
+        perguntas.style.display = 'inline'
+        respostas.style.display = 'none'
 
-            
-}
+        document.getElementById('id_idade').value = ''
+        document.getElementById('id_altura').value = ''
+        document.getElementById('id_calcado').value = ''
+
+    }
 </script>
