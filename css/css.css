@@ -1,8 +1,7 @@
 /* TODAS AS ABAS */
 
-@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
 body {
-    font-family: 'Overlock', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
 }
 
@@ -27,7 +26,7 @@ h1 {
 
 #icon {
     cursor: pointer;
-    padding: 10px;
+    padding: 17px;
     position: absolute;
     z-index: 1;
 }
@@ -44,7 +43,7 @@ h1 {
 .menu nav {
     width: 100%;
     position: absolute;
-    top: 45px;
+    top: 50px;
 }
 
 .menu nav a {
@@ -75,9 +74,7 @@ nav ul {
     transform: translateX(220px)
 }
 
-.skt_ideial {
-    text-align: center;
-}
+
 
 /* CABEÇALHO */
 
@@ -85,8 +82,8 @@ nav ul {
     text-align: center;
     border-bottom: 4px solid #00cec9;
     overflow: auto;
-    background-color: #b2bec3;
-    padding: 8px 0 8px 0;
+    background-color: #636e72;
+    padding: 10px 0 10px 0;
 }
 
 .header a {
@@ -94,4 +91,39 @@ nav ul {
     color: white;
 }
 
+.header span {
+    margin: 0;
+    float: left;
+    font-size: 40px;
+    color: white;
+    padding-left: 40%;
+}
 
+.header button {
+    float: right;
+    margin-left: 20px;
+    height: 43px;
+    width: 95px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.header button:hover {
+    background-color: #00cec9ed;
+}
+
+
+/* PAG SKT IDEAL */
+
+.skt_ideial {
+    text-align: center;
+}
+
+.skt_ideial input{
+    outline: none;
+   padding-top: 20px;
+    border: none;
+    border-bottom: 3px solid #636e72;
+    
+}

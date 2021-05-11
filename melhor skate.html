@@ -29,12 +29,7 @@
                     <li> <a href="">Vídeo-parts</a></li>
 
                     <li> <a href="">Contato</a></li>
-
-                    <li><a href="">Cadastro</a></li>
-
-                    <li><a href="">Login</a></li>
                 </ul>
-
             </nav>
         </div>
 
@@ -42,6 +37,16 @@
 
     </div>
 
+    <div class="header">
+        <div class="container">
+            <span>SK8 ON MIND</span>
+
+            <div class="login"></div>
+            <button><a href="">Login</a></button>
+            <button><a href="">Cadastre-se</a></button>
+        </div>
+    </div>
+    </div>
 
     <div class="skt_ideial">
         <div class="container">
@@ -98,17 +103,39 @@
 
             if (idade <= 8 && altura <= 1, 15 && calcado <= 37) {
                 result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>
-                Um truck de 129mm é o ideal para seu shape <br>`
+
+                Um truck de 129mm é o ideal para seu shape <br>
+
+                Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
+                são de 51mm a 55mm, que são mais lentas e mais leves.<br>
+                
+                ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
+                são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
             }
 
             else if (idade <= 12 && altura <= 1, 35 && calcado <= 39) {
-                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> 
-            Um truck de 129mm é o ideal para seu shape <br>`
+                result.innerHTML =
+                    `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> 
+
+                     Um truck de 129mm é o ideal para seu shape <br>
+
+                     Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
+                     são de 51mm a 55mm, que são mais lentas e mais leves.<br>
+
+                     ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
+                     são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
             }
 
             else {
                 result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>
-                Um truck de 136mm á 149mm é o ideal para seu shape <br>`
+
+                Um truck de 136mm á 149mm é o ideal para seu shape <br>
+                
+                Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
+                     são de 51mm a 55mm, que são mais lentas e mais leves.<br>
+                     
+                     ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
+                     são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
             }
         }
 
