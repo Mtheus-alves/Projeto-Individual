@@ -1,17 +1,9 @@
 /* TODAS AS ABAS */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
-}
-
-.container {
-    width: 93%;
-    margin: auto;
-}
-
-h1 {
-    margin-top: 0
 }
 
 /* MENU LATERAL */
@@ -26,9 +18,10 @@ h1 {
 
 #icon {
     cursor: pointer;
-    padding: 17px;
     position: absolute;
     z-index: 1;
+    top: 25px;
+    left: 50px;
 }
 
 .navbar {
@@ -38,12 +31,13 @@ h1 {
     position: absolute;
     transition: all .2s linear;
     left: -260px;
+  
 }
 
 .menu nav {
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 70px;
 }
 
 .menu nav a {
@@ -74,44 +68,51 @@ nav ul {
     transform: translateX(220px)
 }
 
-
-
 /* CABEÇALHO */
 
 .header {
-    text-align: center;
-    border-bottom: 4px solid #00cec9;
-    overflow: auto;
     background-color: #636e72;
-    padding: 10px 0 10px 0;
+    border-bottom: 3px solid #00cec9;
 }
 
-.header a {
-    text-decoration: none;
-    color: white;
+.titulo_head {
+    margin: 0 auto;
+    color: white; 
+text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.header span {
-    margin: 0;
-    float: left;
-    font-size: 40px;
-    color: white;
-    padding-left: 40%;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
-.header button {
-    float: right;
-    margin-left: 20px;
-    height: 43px;
-    width: 95px;
+.login {
+    justify-self: flex-end;
+}
+
+.login button{
+    width: 90px;
+    height: 40px;
     background-color: transparent;
-    border-color: black;
-    border-radius: 20px;
+    border: none;
+    border-radius: 12px;
+   font-family: 'Nunito', sans-serif;
+   font-size: 14px;
 }
 
-.header button:hover {
-    background-color: #00cec9ed;
+.login button:hover{
+    background-color: #00cec9;
+
 }
+
+.login button a{
+text-decoration: none;
+color: white;
+
+}
+
 
 
 /* PAG SKT IDEAL */
@@ -120,10 +121,21 @@ nav ul {
     text-align: center;
 }
 
-.skt_ideial input{
+.skt_ideial input {
     outline: none;
-   padding-top: 20px;
+    padding-top: 20px;
     border: none;
     border-bottom: 3px solid #636e72;
-    
+}
+
+
+/* INDEX */
+
+.banner{
+    background-color:grey ;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
 }
