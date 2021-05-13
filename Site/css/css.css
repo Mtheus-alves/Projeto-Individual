@@ -51,7 +51,7 @@ nav ul {
 }
 
 #first {
-    border-top: 2px solid #b2bec3;
+    border-top: 3px solid #b2bec3;
 }
 
 .menu li {
@@ -72,7 +72,7 @@ nav ul {
 
 .header {
     background-color: #636e72;
-    border-bottom: 3px solid #00cec9;
+    border-bottom: 3px solid #b2bec3;
 }
 
 .titulo_head {
@@ -121,21 +121,18 @@ color: white;
     text-align: center;
 }
 
-.skt_ideial input {
-    outline: none;
-    padding-top: 20px;
-    border: none;
-    border-bottom: 3px solid #636e72;
+.skt_ideial h1{
+text-align: left;
+padding-left: 100px;
+ font-size: 50px;
+}
+   
+
+.skt_ideial input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+    -moz-appearance:textfield;
 }
 
 
 /* INDEX */
-
-.banner{
-    background-color:grey ;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-}

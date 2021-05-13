@@ -11,6 +11,7 @@
 
 <body>
     <div class="menu">
+        
         <input type="checkbox" id="check">
 
         <label for="check" id="icon">
@@ -39,18 +40,21 @@
 
     <div class="header">
         <div class="container">
-            <h1>SK8 ON MIND</h1>
-
-            <div class="login"></div>
+          <div class="titulo_head">
+             <h1>SK8 ON MIND</h1>
+          </div>
+    
+          <div class="login">
             <button><a href="">Login</a></button>
             <button><a href="">Cadastre-se</a></button>
+          </div>
         </div>
-    </div>
-    </div>
+      </div>
+
 
     <div class="skt_ideial">
-        <div class="container">
-            <h1> Qual é o skate mais recomendado para você? </h1>
+        
+            <h1> Qual é o skate  mais <br> recomendado para você? </h1>
 
 
             <div id="perguntas">
@@ -58,13 +62,13 @@
                 Descubra respondendo algumas perguntas abaixo: <br><br>
 
                 Qual sua idade? <br>
-                <input type="text" id="id_idade"> <br><br>
+                <input type="number" id="id_idade"> <br><br>
 
                 Qual sua altura? <br>
-                <input type="text" id="id_altura"> <br><br>
+                <input type="number" id="id_altura"> <br><br>
 
                 Quanto você calça? <br>
-                <input type="text" id="id_calcado"> <br><br>
+                <input type="number" id="id_calcado"> <br><br>
 
 
                 <button onclick="resultados()">Mostrar resultados</button>
