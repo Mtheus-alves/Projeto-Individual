@@ -25,7 +25,7 @@ body {
 }
 
 .navbar {
-    background-color: #636e72;
+    background-color: #485460;
     height: 100%;
     width: 260px;
     position: absolute;
@@ -51,17 +51,17 @@ nav ul {
 }
 
 #first {
-    border-top: 3px solid #b2bec3;
+    border-top: 3px solid #d2dae2;
 }
 
 .menu li {
     padding: 30px;
     transition: all .2s linear;
-    border-bottom: 2px solid #b2bec3;
+    border-bottom: 2px solid #d2dae2;
 }
 
 .menu li:hover {
-    background-color: #00cec9;
+    background-color: #34e7e4;
 }
 
 #check:checked~.navbar {
@@ -71,14 +71,15 @@ nav ul {
 /* CABEÇALHO */
 
 .header {
-    background-color: #636e72;
-    border-bottom: 3px solid #b2bec3;
+    background-color: #485460;
+    border-bottom: 3px solid #d2dae2;
 }
 
 .titulo_head {
     margin: 0 auto;
     color: white; 
 text-shadow: black 0.1em 0.1em 0.2em;
+padding-left: 185px;
 }
 
 .container {
@@ -103,7 +104,7 @@ text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .login button:hover{
-    background-color: #00cec9;
+    background-color: #34e7e4;
 
 }
 
@@ -124,7 +125,9 @@ color: white;
 .skt_ideial h1{
 text-align: left;
 padding-left: 100px;
- font-size: 50px;
+ font-size: 45px;
+ margin: 0;
+ padding-top:120px
 }
    
 
@@ -134,5 +137,27 @@ padding-left: 100px;
     -moz-appearance:textfield;
 }
 
+.img1{
+    float: right;
+    height: 568px;
+}
 
+#exibir, #resultados, #voltar{
+    width:200px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: white;
+    border-color: black;
+}
+
+
+
+#exibir:hover ,#resultados:hover, #voltar:hover{
+    background-color: #34e7e4;
+}
+
+
+#truck, #shape #roda{
+    background-color: red;
+}
 /* INDEX */

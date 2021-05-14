@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/css.css">
 </head>
 
-<body>
+<body id="body">
     <div class="menu">
-        
+
         <input type="checkbox" id="check">
 
         <label for="check" id="icon">
@@ -23,65 +23,78 @@
                 <ul>
                     <li id="first"><a href="index.html">Home</a> </li>
 
-                    <li> <a href="">História do skate</a></li>
+                    <li> <a href="história.html">História do skate</a></li>
 
                     <li> <a href="melhor skate.html">Skate ideial</a></li>
 
-                    <li> <a href="">Vídeo-parts</a></li>
+                    <li> <a href="videoparts.html">Vídeo-parts</a></li>
 
-                    <li> <a href="">Contato</a></li>
+                    <li> <a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
-
-
 
     </div>
 
     <div class="header">
         <div class="container">
-          <div class="titulo_head">
-             <h1>SK8 ON MIND</h1>
-          </div>
-    
-          <div class="login">
-            <button><a href="">Login</a></button>
-            <button><a href="">Cadastre-se</a></button>
-          </div>
+            <div class="titulo_head">
+                <h1>SK8 ON MIND</h1>
+            </div>
+
+            <div class="login">
+                <button><a href="">Login</a></button>
+                <button><a href="">Cadastre-se</a></button>
+            </div>
         </div>
-      </div>
+    </div>
 
 
     <div class="skt_ideial">
-        
-            <h1> Qual é o skate  mais <br> recomendado para você? </h1>
+        <div id="inicio">
+            <img class="img1" src="imgs/a.jpg" alt="">
 
+            <h1> Qual é o skate mais <br> recomendado para você? </h1>
+            <h3>Saiba qual skate comprar respondendo algumas perguntas abaixo:</h3>
 
-            <div id="perguntas">
+            <br><br>
 
-                Descubra respondendo algumas perguntas abaixo: <br><br>
-
-                Qual sua idade? <br>
-                <input type="number" id="id_idade"> <br><br>
-
-                Qual sua altura? <br>
-                <input type="number" id="id_altura"> <br><br>
-
-                Quanto você calça? <br>
-                <input type="number" id="id_calcado"> <br><br>
-
-
-                <button onclick="resultados()">Mostrar resultados</button>
-            </div>
-
-            <div id="respostas" style="display: none;">
-
-                <div id="result"></div>
-                <br><br>
-                <button id="voltar" onclick="outro()">Fazer outro teste</button>
-
-            </div>
+            <button id="exibir" onclick="exibir()">Exibir perguntas</button>
         </div>
+
+        <div id="perguntas" style="display: none;">
+
+            Qual sua idade? <br>
+            <input type="number" id="id_idade"> <br><br>
+
+            Qual sua altura? <br>
+            <input type="number" id="id_altura"> <br><br>
+
+            Quanto você calça? <br>
+            <input type="number" id="id_calcado"> <br><br>
+
+
+            Qual modalidade você mais gosta? <br>
+            <select name="" id="id_modalidade">
+                <option value=""></option>
+                <option value="Vertical">vertical</option>
+                <option value="Street">Street</option>
+            </select>
+
+            <br><br>
+            <button id="resultados" onclick="resultados()">Mostrar resultados</button>
+        </div>
+
+        <div id="respostas" style="display: none;">
+
+            <div id="shape"></div>
+            <div id="truck"></div>
+            <div id="roda"></div>
+            <br><br>
+            <button id="voltar" onclick="outro()">Fazer outro teste</button>
+
+        </div>
+    </div>
     </div>
 
 </body>
@@ -89,11 +102,18 @@
 </html>
 
 <script>
+    function exibir() {
+        inicio.style.display = 'none'
+        perguntas.style.display = 'inline'
+        body.style.background = '#bbf8f7'
+    }
+
     function resultados() {
         var idade = Number(id_idade.value);
         var altura = Number(id_altura.value);
         var calcado = Number(id_calcado.value)
-        var validar = idade != '' && altura != '' && calcado != ''
+        var modalidade = id_modalidade.value
+        var validar = idade != '' && altura != '' && calcado != '' && modalidade != ''
 
         if (validar) {
             perguntas.style.display = 'none'
@@ -106,40 +126,28 @@
         function tamanhos() {
 
             if (idade <= 8 && altura <= 1, 15 && calcado <= 37) {
-                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>
-
-                Um truck de 129mm é o ideal para seu shape <br>
-
-                Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
-                são de 51mm a 55mm, que são mais lentas e mais leves.<br>
-                
-                ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
-                são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
+                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>`
+                truck.innerHTML = ` Um truck de 129mm é o ideal para seu shape <br>`
             }
 
             else if (idade <= 12 && altura <= 1, 35 && calcado <= 39) {
-                result.innerHTML =
-                    `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br> 
-
-                     Um truck de 129mm é o ideal para seu shape <br>
-
-                     Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
-                     são de 51mm a 55mm, que são mais lentas e mais leves.<br>
-
-                     ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
-                     são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
+                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br>`
+                truck.innerHTML = `Um truck de 129mm é o ideal para seu shape <br>`
             }
 
             else {
-                result.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>
+                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>`
+                truck.innerHTML = `Um truck de 136mm á 149mm é o ideal para seu shape <br>`
+            }
 
-                Um truck de 136mm á 149mm é o ideal para seu shape <br>
-                
-                Se você é um skatista que gosta de mandar manobras de solo e skateparks, as rodinhas mais recomendadas
-                     são de 51mm a 55mm, que são mais lentas e mais leves.<br>
-                     
-                     ou se gostar mais de andar em Half-pipes(vertical), bowls e snakes, as rodinhas mais recomendadas
-                     são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
+            if (modalidade == 'street') {
+                rodas.innerHTML = `Como você  gosta da modalidade street(manobras de solo e skateparks), as rodinhas mais recomendadas
+                são de 51mm a 55mm, que são mais lentas e mais leves.`
+            }
+
+            else {
+                rodas.innerHTML = `  Como você prefere a modalidade vertical(Half-pipes, bowls e snakes) , as rodinhas mais recomendadas
+                são de 56mm a 60mm, que São maiores e mais pesadas.< br >`
             }
         }
 
