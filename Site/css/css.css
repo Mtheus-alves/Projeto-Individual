@@ -1,6 +1,8 @@
 /* TODAS AS ABAS */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -25,7 +27,7 @@ body {
 }
 
 .navbar {
-    background-color: #485460;
+    background-color: #353535;
     height: 100%;
     width: 260px;
     position: absolute;
@@ -61,7 +63,7 @@ nav ul {
 }
 
 .menu li:hover {
-    background-color: #34e7e4;
+    background-color: #ff6b6b;
 }
 
 #check:checked~.navbar {
@@ -71,15 +73,21 @@ nav ul {
 /* CABEÇALHO */
 
 .header {
-    background-color: #485460;
+    background-color: #353535;
     border-bottom: 3px solid #d2dae2;
 }
 
 .titulo_head {
     margin: 0 auto;
     color: white; 
-text-shadow: black 0.1em 0.1em 0.2em;
+    
+    
+   
 padding-left: 185px;
+}
+
+.titulo_head:hover{
+    text-shadow: 2px 2px 0px #ff6b6b;
 }
 
 .container {
@@ -104,7 +112,7 @@ padding-left: 185px;
 }
 
 .login button:hover{
-    background-color: #34e7e4;
+    background-color: #ff6b6b;
 
 }
 
@@ -137,7 +145,7 @@ padding-left: 100px;
     -moz-appearance:textfield;
 }
 
-.img1{
+.img_melhorskate{
     float: right;
     height: 568px;
 }
@@ -153,11 +161,58 @@ padding-left: 100px;
 
 
 #exibir:hover ,#resultados:hover, #voltar:hover{
-    background-color: #34e7e4;
+    background-color: #ff6b6b;
 }
 
 
 #truck, #shape #roda{
     background-color: red;
 }
-/* INDEX */
+/* VIDEOPART */
+
+.videopart{
+    font-size: 20px;
+}
+
+.img1{
+    height: 350px;
+    float: left;
+}
+
+.videopart h1{
+    padding-top: 50px;
+}
+#desc {
+    padding-top: 130px;
+    font-size: 25px;
+}
+.videopart p{
+    text-align: center;
+}
+.videopart a{
+    color: black;
+}
+.videos{
+    text-align: center;
+
+}
+iframe{
+    height: 400px;
+    width: 700px;
+}
+
+
+.container_vp{
+    margin: auto;
+    width: 65%;
+    
+}
+
+.container_vp:hover{
+    -webkit-box-shadow: -4px 0px 13px 0px #353535; 
+    box-shadow: -4px 0px 13px 0px #353535;
+}
+.intro_vp{
+    margin:auto;
+    width: 90%;
+}
