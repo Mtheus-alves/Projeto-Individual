@@ -34,12 +34,16 @@
             </nav>
         </div>
 
+
+
     </div>
 
     <div class="header">
         <div class="container">
             <div class="titulo_head">
-                <h1>SK8 ON MIND</h1>
+                <h1>SK8 ON MIND
+                    <img src="imgs/logo.gif" alt="">
+                </h1>
             </div>
 
             <div class="login">
@@ -75,24 +79,26 @@
 
 
             Qual modalidade você mais gosta? <br>
-            <select name="" id="id_modalidade">
+            <select name="mod" id="id_modalidade">
                 <option value=""></option>
                 <option value="Vertical">vertical</option>
-                <option value="Street">Street</option>
+                <option value="street">Street</option>
             </select>
 
             <br><br>
+           
             <button id="resultados" onclick="resultados()">Mostrar resultados</button>
         </div>
 
         <div id="respostas" style="display: none;">
-
-            <div id="shape"></div>
-            <div id="truck"></div>
-            <div id="roda"></div>
-            <br><br>
-            <button id="voltar" onclick="outro()">Fazer outro teste</button>
-
+            <div id="container_respostas">
+                <div id="shape"></div>
+                <div id="truck"></div>
+                <div id="roda"></div>
+               
+            </div>
+<br><br>
+            <div class="btn_voltar"><button id="voltar" onclick="outro()">Fazer outro teste</button></div>    
         </div>
     </div>
     </div>
@@ -105,7 +111,7 @@
     function exibir() {
         inicio.style.display = 'none'
         perguntas.style.display = 'inline'
-        body.style.background = '#bbf8f7'
+        body.style.background = 'rgb(241, 234, 234)'
     }
 
     function resultados() {
@@ -141,13 +147,13 @@
             }
 
             if (modalidade == 'street') {
-                rodas.innerHTML = `Como você  gosta da modalidade street(manobras de solo e skateparks), as rodinhas mais recomendadas
+                roda.innerHTML = `Como você  gosta da modalidade Steet(manobras de solo e skateparks), as rodinhas mais recomendadas
                 são de 51mm a 55mm, que são mais lentas e mais leves.`
             }
 
             else {
-                rodas.innerHTML = `  Como você prefere a modalidade vertical(Half-pipes, bowls e snakes) , as rodinhas mais recomendadas
-                são de 56mm a 60mm, que São maiores e mais pesadas.< br >`
+                roda.innerHTML = `Como você prefere a modalidade vertical(Half-pipes, bowls e snakes), as rodinhas mais recomendadas
+                são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
             }
         }
 
