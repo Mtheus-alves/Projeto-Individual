@@ -279,6 +279,7 @@ iframe{
     height: 488px;
     display: flex;
     align-items: center;
+    font-size: 25px;
 }
 
 .materia1{
@@ -423,41 +424,15 @@ iframe{
 
 
 /* HISTÓRIA SKATE */
-#skt-antigo{
-    height: 230px;
-    float: right;
-    padding-right: 120px;
-}
-#skt-antigo2{
-    height: 230px;
-    float: left;
-    padding-left: 120px;
-}
-.historia h1 {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.hist_1  {
-   font-size: 25px;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.hist_2  {
-    text-align: right;
-    padding-left: 50px;
-    padding-top: 130px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container_hist {
-    width: 80%;
+.container_hist{
     margin: auto;
+    width: 95%;
+    background-color: red;
+}
+
+.historia h1{
+    text-align: center;
 }
 
 /* CADASTRO */
@@ -553,4 +528,25 @@ padding-top: 20px;
     background-size: cover;
     background-attachment: fixed;
    padding-top: 100px;
+}
+
+/* CONTATO */
+
+.img_cont{
+    float: right;
+    margin: 0;
+}
+
+.obrigatorios input{
+    border-radius: 100px;
+    width:500px;
+    height:60px;
+    text-align: center;
+}
+
+.opcional {
+    border-radius: 100px;
+    height: 200px;
+    width: 500px;
+    text-align: center;
 }
