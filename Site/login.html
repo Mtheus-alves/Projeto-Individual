@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body class="fundo_log">
     <center>
 
@@ -17,18 +19,69 @@
             </h1>
 
             <br>
-            <form action="" class="pag_login">
-                
-                Insira seu usuário<br>
-                <input type="text" name="usuario" id="id_usuario"><br><br>
-                Insira sua senha: <br>
-                <input type="password" name="senha" id="id_senha"><br><br>
+            <form id="form_login" method="post" onsubmit="return entrar()">
+                Login:
+                <input type="text" class="input-padrao" name="usuario_log">
+                <br>
+                Senha:
+                <input type="password" class="input-padrao" name="senha">
+                <br>
+                <button id="btn_entrar" class="btn-green">Entrar</button>
             </form>
-            <br>    
+            <br>
             <button>Entrar</button>
             <br>
-           <div class="cadas"> Já tem uma conta? Clique aqui!</div>
+            <div class="cadas"> Já tem uma conta? Clique aqui!</div>
         </div>
     </center>
 </body>
+
 </html>
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+                    console.log(json)
+                    sessionStorage.id_usuario_meuapp = json.usuario;
+                    sessionStorage.senha_meuapp = json.senha;
+
+                    window.location.href = 'tempo-real.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>
+</script>

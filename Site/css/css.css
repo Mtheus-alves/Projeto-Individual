@@ -1,8 +1,6 @@
 /* TODAS AS ABAS */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -13,8 +11,6 @@ body {
 .menu {
     float: left;
 }
-
-
 
 #check {
     display: none;
@@ -35,7 +31,6 @@ body {
     position: absolute;
     transition: all .2s linear;
     left: -260px;
-  
 }
 
 .menu nav {
@@ -77,26 +72,23 @@ nav ul {
 .header {
     background-color: #353535;
     border-bottom: 3px solid #d2dae2;
-   
 }
 
 .titulo_head {
     margin: 0 auto;
-    color: white; 
-padding-left: 185px;
+    color: white;
+    padding-left: 185px;
 }
 
-.titulo_head:hover{
+.titulo_head:hover {
     text-shadow: 2px 2px 0px #ff6b6b;
 }
 
-
-
-.titulo_head h1 img{
+.titulo_head h1 img {
     height: 40px;
     padding-top: 4px;
     margin: 0;
-   transform: translateY(5px);
+    transform: translateY(5px);
 }
 
 .container {
@@ -110,28 +102,24 @@ padding-left: 185px;
     justify-self: flex-end;
 }
 
-.login button{
+.login button {
     width: 90px;
     height: 40px;
     background-color: transparent;
     border: none;
     border-radius: 12px;
-   font-family: 'Nunito', sans-serif;
-   font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
 }
 
-.login button:hover{
+.login button:hover {
     background-color: #ff6b6b;
-
 }
 
-.login button a{
-text-decoration: none;
-color: white;
-
+.login button a {
+    text-decoration: none;
+    color: white;
 }
-
-
 
 /* PAG SKT IDEAL */
 
@@ -139,58 +127,54 @@ color: white;
     text-align: center;
 }
 
-.skt_ideial h1{
-text-align: left;
-padding-left: 100px;
- font-size: 45px;
- margin: 0;
- padding-top:120px
+.skt_ideial h1 {
+    text-align: left;
+    padding-left: 100px;
+    font-size: 45px;
+    margin: 0;
+    padding-top: 120px
 }
-   
 
 .skt_ideial input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0; 
-    -moz-appearance:textfield;
+    margin: 0;
+    -moz-appearance: textfield;
 }
 
-.img_melhorskate{
+.img_melhorskate {
     float: right;
     height: 556px;
 }
 
-#exibir, #resultados, #voltar{
-    width:200px;
+#exibir, #resultados, #voltar {
+    width: 200px;
     height: 60px;
     border-radius: 100px;
     background-color: white;
     border-color: black;
 }
 
-
-
-#exibir:hover ,#resultados:hover, #voltar:hover{
+#exibir:hover, #resultados:hover, #voltar:hover {
     background-color: #ff6b6b;
 }
 
-#container_respostas{
+#container_respostas {
     margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
     padding-top: 50px;
 }
-#respostas{
+
+#respostas {
     background-color: rgb(189, 182, 182);
     height: 488px;
     display: flex;
     align-items: center;
-    
 }
 
-#shape{
+#shape {
     background-color: 353535;
     height: 350px;
     width: 300px;
@@ -201,80 +185,81 @@ padding-left: 100px;
     background-color: #353535;
 }
 
-#truck,#roda{
+#truck, #roda {
     background-color: #353535;
     height: 350px;
     width: 300px;
     text-align: center;
-     border: #ff6b6b solid 3px;
+    border: #ff6b6b solid 3px;
     float: right;
     border-radius: 20px;
     color: white;
 }
 
-#truck:hover ,#roda:hover ,#shape:hover{
+#truck:hover, #roda:hover, #shape:hover {
     background-color: #ff6b6b;
     border: #353535 solid 3px;
 }
 
-.btn_voltar{
+.btn_voltar {
     align-items: center;
-  
 }
 
 /* VIDEOPART */
 
-.videopart{
+.videopart {
     font-size: 20px;
 }
 
-.img1{
+.img1 {
     height: 350px;
     float: left;
 }
 
-.videopart h1{
+.videopart h1 {
     padding-top: 50px;
 }
+
 #desc {
     padding-top: 130px;
     font-size: 25px;
 }
-.videopart p{
+
+.videopart p {
     text-align: center;
 }
-.videopart a{
+
+.videopart a {
     color: black;
 }
-.videos{
-    text-align: center;
 
+.videos {
+    text-align: center;
 }
-iframe{
+
+iframe {
     height: 400px;
     width: 700px;
 }
 
-
-.container_vp{
+.container_vp {
     margin: auto;
     width: 65%;
-    
 }
 
-.container_vp:hover{
-    -webkit-box-shadow: -4px 0px 13px 0px #353535; 
+.container_vp:hover {
+    -webkit-box-shadow: -4px 0px 13px 0px #353535;
     box-shadow: -4px 0px 13px 0px #353535;
 }
-.intro_vp{
-    margin:auto;
+
+.intro_vp {
+    margin: auto;
     width: 90%;
 }
 
-
 /* INDEX */
 
-.materias{
+.materias {
     background-color: rgb(189, 182, 182);
     height: 488px;
     display: flex;
@@ -282,27 +267,26 @@ iframe{
     font-size: 25px;
 }
 
-.materia1{
+.materia1 {
     background-color: rgb(241, 234, 234);
     height: 350px;
     width: 300px;
     text-align: center;
     border: black solid 3px;
     border-radius: 20px;
-    
 }
 
-.materia2{
+.materia2 {
     background-color: rgb(241, 234, 234);
     height: 350px;
     width: 300px;
     text-align: center;
-     border: black solid 3px;
+    border: black solid 3px;
     float: right;
     border-radius: 20px;
 }
 
-.materia3{
+.materia3 {
     background-color: rgb(241, 234, 234);
     height: 350px;
     width: 300px;
@@ -312,32 +296,29 @@ iframe{
     border-radius: 20px;
 }
 
-.materia1:hover, .materia2:hover, .materia3:hover{
+.materia1:hover, .materia2:hover, .materia3:hover {
     background-color: #ff6b6b;
 }
 
-.container_materia img{
+.container_materia img {
     height: 150px;
 }
 
-.container_materia{
+.container_materia {
     margin: auto;
     width: 85%;
     display: flex;
     justify-content: space-between;
 }
 
-
-.transit{
+.transit {
     background-color: #353535;
     height: 68px;
 }
 
-
-
-.banner{
+.banner {
     text-align: center;
-     background-image: url(../imgs/pexels-feruzbek-matkarimov-2885940.jpg); 
+    background-image: url(../imgs/pexels-feruzbek-matkarimov-2885940.jpg);
     background-color: rgb(189, 182, 182);
     background-repeat: no-repeat;
     background-size: cover;
@@ -345,65 +326,63 @@ iframe{
     height: 400px;
     border-bottom: 5px solid #353535;
 }
-.banner h1{
-    margin:0;
+
+.banner h1 {
+    margin: 0;
     text-align: center;
     padding-right: 680px;
     padding-top: 80px;
-   
 }
 
-.btn_banner{
+.btn_banner {
     padding-right: 700px;
 }
 
-.banner button{
+.banner button {
     height: 60px;
     width: 200px;
     border-radius: 100px;
     border-color: black;
 }
 
-.banner button:hover{
+.banner button:hover {
     background-color: #353535;
     color: white;
-  
 }
 
-.index_vid{
+.index_vid {
     height: 350px;
     background-color: rgb(241, 234, 234);
 }
 
-.container_vid{
+.container_vid {
     margin: auto;
     width: 70%;
-    
 }
 
-.index_vid h1{
- text-align: center;
- margin: 0;
- padding-top: 60px;
+.index_vid h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
     float: right;
- padding-left: 100px;
+    padding-left: 100px;
 }
 
-.index_vid img{
+.index_vid img {
     float: left;
     height: 300px;
 }
 
-.btn_vid{
+.btn_vid {
     text-align: center;
     margin: 0;
-       float: right;
+    float: right;
     padding-left: 100px;
     padding-right: 124px;
-    padding-top:20px
+    padding-top: 20px
 }
 
-.index_vid button{
+.index_vid button {
     height: 50px;
     width: 190px;
     border-radius: 100px;
@@ -412,32 +391,45 @@ iframe{
     color: white;
 }
 
-.index_vid button:hover{
+.index_vid button:hover {
     background-color: #ff6b6b;
 }
 
-.fazer_login{
+.fazer_login {
     height: 400px;
 }
 
-
-
-
 /* HISTÓRIA SKATE */
 
-.container_hist{
+.container_hist {
     margin: auto;
-    width: 95%;
-    background-color: red;
+    width: 90%;
 }
 
-.historia h1{
+.historia h1 {
+    text-align: center;
+}
+
+.historia p {
+    font-size: 24px;
+    width: 700px;
+   
+    padding-top: 100px;
+}
+
+.par_1, .par_3, .par_5, .par_7, .par_9, .par_11, .par_13 {
+    float: right;
+    text-align: center;
+}
+
+.par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
+    float: left;
     text-align: center;
 }
 
 /* CADASTRO */
 
-.fundo_cad{
+.fundo_cad {
     background-image: url(../imgs/fundologin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,18 +437,17 @@ iframe{
     padding-top: 40px;
 }
 
-.cadastro{
+.cadastro {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     background-color: #353535;
     height: 500px;
     width: 400px;
     color: white;
-   border-radius: 20px;
-  
+    border-radius: 20px;
 }
 
-.cadastro input{
+.cadastro input {
     text-align: center;
     border: none;
     border-bottom: 2px solid #ff6b6b;
@@ -465,40 +456,37 @@ iframe{
     color: white;
 }
 
-.cadastro img{
+.cadastro img {
     height: 40px;
     transform: translateY(5px);
 }
 
-.cadastro h1{
-padding-top: 20px;
+.cadastro h1 {
+    padding-top: 20px;
 }
 
-.cadastro button{
-   width: 180px;
-   height: 30px;
-    
+.cadastro button {
+    width: 180px;
+    height: 30px;
 }
 
-.log{
+.log {
     padding-top: 10px;
 }
 
-
 /* LOGIN */
 
-.log{
+.log {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     background-color: #353535;
     height: 400px;
     width: 400px;
     color: white;
-   border-radius: 20px;
-  
+    border-radius: 20px;
 }
 
-.log input{
+.log input {
     text-align: center;
     border: none;
     border-bottom: 2px solid #ff6b6b;
@@ -507,40 +495,39 @@ padding-top: 20px;
     color: white;
 }
 
-.log img{
+.log img {
     height: 40px;
     transform: translateY(5px);
 }
 
-.log h1{
-padding-top: 20px;
+.log h1 {
+    padding-top: 20px;
 }
 
-.log button{
-   width: 180px;
-   height: 30px;
-    
+.log button {
+    width: 180px;
+    height: 30px;
 }
 
-.fundo_log{
+.fundo_log {
     background-image: url(../imgs/fundologin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-   padding-top: 100px;
+    padding-top: 100px;
 }
 
 /* CONTATO */
 
-.img_cont{
+.img_cont {
     float: right;
     margin: 0;
 }
 
-.obrigatorios input{
+.obrigatorios input {
     border-radius: 100px;
-    width:500px;
-    height:60px;
+    width: 500px;
+    height: 60px;
     text-align: center;
 }
 
