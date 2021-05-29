@@ -412,9 +412,9 @@ iframe {
 
 .historia p {
     font-size: 24px;
-    width: 700px;
+    width: 670px;
    
-    padding-top: 100px;
+    padding-top: 140px;
 }
 
 .par_1, .par_3, .par_5, .par_7, .par_9, .par_11, .par_13 {
@@ -424,7 +424,12 @@ iframe {
 
 .par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
     float: left;
-    text-align: center;
+    text-align: center  ;
+}
+
+.historia img{
+    height: 280px;
+ 
 }
 
 /* CADASTRO */
@@ -493,6 +498,7 @@ iframe {
     outline: none;
     background-color: transparent;
     color: white;
+    padding-top: 40px;
 }
 
 .log img {
@@ -517,23 +523,49 @@ iframe {
     padding-top: 100px;
 }
 
+.btn_logg{
+    padding-top: 40px;
+}
+
 /* CONTATO */
+.contato {
+    text-align: center;
+}
+
+
 
 .img_cont {
     float: right;
     margin: 0;
 }
 
+.contato h1{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.contato input{
+    border-color: #ff6b6b;
+    
+}
 .obrigatorios input {
-    border-radius: 100px;
-    width: 500px;
-    height: 60px;
+    border-radius: 10px;
+    width: 230px;
+    height: 30px;
     text-align: center;
 }
 
 .opcional {
-    border-radius: 100px;
+    border-radius: 10px;
     height: 200px;
     width: 500px;
     text-align: center;
 }
+
+.contato button{
+    width: 230px;
+    height: 30px;
+    border-color: #ff6b6b;
+    border-radius: 10px;
+}
+
