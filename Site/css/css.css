@@ -262,6 +262,7 @@ iframe {
 .materias {
     background-color: rgb(189, 182, 182);
     height: 488px;
+   
     display: flex;
     align-items: center;
     font-size: 25px;
@@ -413,8 +414,6 @@ iframe {
 .historia p {
     font-size: 24px;
     width: 670px;
-   
-    padding-top: 140px;
 }
 
 .par_1, .par_3, .par_5, .par_7, .par_9, .par_11, .par_13 {
@@ -424,12 +423,20 @@ iframe {
 
 .par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
     float: left;
-    text-align: center  ;
+    text-align: center;
 }
 
-.historia img{
+.historia img {
     height: 280px;
- 
+   
+}
+
+.img_hist2, .img_hist3, .img_hist4, .img_hist5, .img_hist6, .img_hist7, .img_hist8, .img_hist9, .img_hist10, .img_hist11, .img_hist12, .img_hist13, .img_hist14 {
+    padding-top: 110px;
+}
+
+.par_3, .par_5, .par_7, .par_9, .par_11, .par_13, .par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
+    padding-top: 140px;
 }
 
 /* CADASTRO */
@@ -523,31 +530,30 @@ iframe {
     padding-top: 100px;
 }
 
-.btn_logg{
+.btn_logg {
     padding-top: 40px;
 }
 
 /* CONTATO */
+
 .contato {
     text-align: center;
 }
-
-
 
 .img_cont {
     float: right;
     margin: 0;
 }
 
-.contato h1{
+.contato h1 {
     font-size: 45px;
     text-transform: uppercase;
 }
 
-.contato input{
+.contato input {
     border-color: #ff6b6b;
-    
 }
+
 .obrigatorios input {
     border-radius: 10px;
     width: 230px;
@@ -562,10 +568,44 @@ iframe {
     text-align: center;
 }
 
-.contato button{
+.contato button {
     width: 230px;
     height: 30px;
     border-color: #ff6b6b;
     border-radius: 10px;
 }
 
+
+/* DASHBOARD */
+
+.lateral{
+    height: 625px;
+    width: 250px;
+    background-color: #353535;
+    border-right: 6px solid #d2dae2;
+    text-align: center;
+    float: left;
+}
+
+.lateral img{
+    padding-top: 30px;
+    height: 120px;
+    padding-bottom: 50px;
+}
+
+.lateral a{
+    text-decoration: none;
+    color: white;
+  padding-right:50px;
+  font-size: 25px;
+}
+
+.lateral li{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.jogo h1{
+    margin: 0;
+   
+}

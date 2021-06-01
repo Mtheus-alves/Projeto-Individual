@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div class="lateral">
+        <img src="imgs/logo.gif" alt="">
+
+        <div class="nav_dash">
+
+            <nav>
+                <ul>
+                    <li><a href="">Progresso </a></li>
+
+                    <li><a href=""> Game of skate</a></li>
+
+                    <li><a href="">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <center>
+        <div class="jogo"><h1>GAME OF SKATE</h1>
+       
+        <select id="select_resultado">
+            <option value="1">Melancia</option>
+            <option value="2">Banana</option>
+            <option value="3">Cereja</option>
+            <option value="4">Laranja</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="pagar()">Fazer manobra</button>
+        <button onclick="encerrar()">Encerrar noitada</button>
+
+        <div id="result"></div>
+        <div id="result2"></div>
+        <div id="result3"></div>
+    </center>
+</div>
+</body>
+
+</html>
+<script>
+    var rod = 0;
+    var gastos = 0;
+    var total = 0;
+
+    var total_gasto = [];
+    var resultados = [];
+    var rodada = [];
+    var fruta_escolhida = [];
+    var valor_ganho = [];
+
+    function pagar() {
+result.innerHTML=''
+
+        var resultado = select_resultado.value;
+        var qtd_acertos = 0;
+        rod++;
+        gastos++;
+
+
+        rodada.push(rod);
+        fruta_escolhida.push(resultado);
+        total_gasto.push(gastos)
+
+        for (var sorteador = 0; sorteador < 4; sorteador++) {
+
+            sorteio = parseInt(Math.random() * 4 + 1)
+            resultados.push(sorteio)
+
+            if (sorteio == 1) {
+                result.innerHTML += `<img src="melancia.jpg">`
+            }
+
+            else if (sorteio == 2) {
+                result.innerHTML += `<img src="banana.jpg">`
+            }
+
+            else if (sorteio == 3) {
+                result.innerHTML += `<img src="cereja.jpg">`
+            }
+
+            else {
+                result.innerHTML += `<img  src="laranja.jpg">`
+            }
+
+            if (sorteio == resultado) {
+                qtd_acertos++
+            }
+        }
+
+        if (qtd_acertos == 1) {
+            result.innerHTML += 'nesta rodada você ganhou R$1,50<br>'
+            valor_ganho.push(1.50)
+        }
+
+        else if (qtd_acertos == 2) {
+            result.innerHTML += 'nesta rodada você ganhou R$5,00<br>'
+            valor_ganho.push(5)
+        }
+
+        else if (qtd_acertos == 3) {
+            result.innerHTML += 'nesta rodada você ganhou R$21,00<br>'
+            valor_ganho.push(21)
+        }
+
+        else if (qtd_acertos == 4) {
+            result.innerHTML += 'nesta rodada você ganhou R$50,00<br>'
+            valor_ganho.push(50)
+        }
+
+        else {
+            result.innerHTML += 'nesta rodada você ganhou R$00,00<br>'
+            valor_ganho.push(0)
+        }
+        console.log(total_gasto.length - 1)
+
+    }
+
+
+    function encerrar() {
+        var gastos = total_gasto.length * 2
+
+
+        result.style.display = 'none'
+        for (var i = 0; i < valor_ganho.length; i++) {
+
+            total = total + valor_ganho[i]
+        }
+        var valor_final = total - gastos
+        result2.innerHTML = `<br> <b> RESUMO DA NOITADA</b> <br><br>
+    Quantidade de rodadas: ${(rodada.length - 1) + 1}
+    <br><br>
+    Valor total gasto: R$${gastos}
+    <br><br>
+    Valor total ganho:R$${total}
+    <br><br>`
+
+
+        if (valor_final > 0) {
+            result3.innerHTML = `Vá ao caixa e RECEBA R$${valor_final}`
+        }
+
+        else if (valor_final < 0) {
+            result3.innerHTML = `Vá ao caixa e PAGUE R$${gastos - total}`
+        }
+
+        else if (valor_final == 0) {
+            'Incrível... Você nem ganhou e nem perdeu!!!!'
+
+        }
+    }
+</script>
