@@ -42,8 +42,7 @@
         <div class="container">
             <div class="titulo_head">
                 <h1>SK8 ON MIND
-                    <img src="imgs/logo.gif"
-                        alt="">
+                    <img src="imgs/logo.gif" alt="">
                 </h1>
             </div>
 
@@ -86,19 +85,25 @@
             </select>
 
             <br><br>
-           
+
             <button id="resultados" onclick="resultados()">Mostrar resultados</button>
         </div>
 
         <div id="respostas" style="display: none;">
             <div id="container_respostas">
-                <div id="shape"></div>
-                <div id="truck"></div>
-                <div id="roda"></div>
-               
+                <a href="https://www.ratusskateshop.com.br/skate/shape/">
+                    <div id="shape"></div>
+                </a>
+                <a href="https://www.ratusskateshop.com.br/skate/truck/">
+                    <div id="truck"></div>
+                </a>
+                <a href="https://www.ratusskateshop.com.br/skate/roda/">
+                    <div id="roda"></div>
+                </a>
+
             </div>
-<br><br>
-            <div class="btn_voltar"><button id="voltar" onclick="outro()">Fazer outro teste</button></div>    
+            <br><br>
+            <div class="btn_voltar"><button id="voltar" onclick="outro()">Fazer outro teste</button></div>
         </div>
     </div>
     </div>
@@ -132,31 +137,34 @@
         function tamanhos() {
 
             if (idade <= 8 && altura <= 1, 15 && calcado <= 37) {
-                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>`
-                truck.innerHTML = ` Um truck de 129mm é o ideal para seu shape <br>`
+                shape.innerHTML = `<br>O shape mais recomendado pra você é entre o tamanho 7 a 7.25 <br>`
+                truck.innerHTML = `<br> Um truck de 129mm é o ideal para seu shape <br>`
             }
 
             else if (idade <= 12 && altura <= 1, 35 && calcado <= 39) {
-                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br>`
-                truck.innerHTML = `Um truck de 129mm é o ideal para seu shape <br>`
+                shape.innerHTML = `<br>O shape mais recomendado pra você é entre o tamanho 7.25 a 7.75 <br>`
+                truck.innerHTML = `<br>Um truck de 129mm é o ideal para seu shape <br>`
             }
 
             else {
-                shape.innerHTML = `O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>`
-                truck.innerHTML = `Um truck de 136mm á 149mm é o ideal para seu shape <br>`
+                shape.innerHTML = `<br>O shape mais recomendado pra você é entre o tamanho 7.25 a maiores larguras<br>`
+                truck.innerHTML = `<br>Um truck de 136mm á 149mm é o ideal para seu shape <br>`
             }
 
             if (modalidade == 'street') {
-                roda.innerHTML = `Como você  gosta da modalidade Steet(manobras de solo e skateparks), as rodinhas mais recomendadas
+                roda.innerHTML = `<br>Como você  gosta da modalidade Steet(manobras de solo e skateparks), as rodinhas mais recomendadas
                 são de 51mm a 55mm, que são mais lentas e mais leves.`
             }
 
             else {
-                roda.innerHTML = `Como você prefere a modalidade vertical(Half-pipes, bowls e snakes), as rodinhas mais recomendadas
+                roda.innerHTML = `<br>Como você prefere a modalidade vertical(Half-pipes, bowls e snakes), as rodinhas mais recomendadas
                 são de 56mm a 60mm,que São maiores e mais pesadas.<br>`
             }
         }
 
+        shape.innerHTML += `<br><br><br><br><br><br><br><br> Clique no quadrado para ver algumas opções:`
+        truck.innerHTML += `<br><br><br><br><br><br><br><br> Clique no quadrado para ver algumas opções:`
+        roda.innerHTML += `<br><br><br><br><br><br> Clique no quadrado para ver algumas opções:`
     }
 
     function outro() {

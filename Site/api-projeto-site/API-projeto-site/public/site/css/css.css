@@ -6,6 +6,21 @@ body {
     margin: 0;
 }
 
+.footer{
+    background-color: #d2dae2;
+    height: 100px;
+    border-top: #353535 solid 3px; 
+    text-align: center;
+    font-size: 20px;
+}
+.redes{
+    padding-top: 40px;
+}
+
+.footer a{
+    color: black;
+}
+
 /* MENU LATERAL */
 
 .menu {
@@ -167,6 +182,11 @@ nav ul {
     padding-top: 50px;
 }
 
+#respostas a{
+    text-decoration: none;
+    
+}
+
 #respostas {
     background-color: rgb(189, 182, 182);
     height: 488px;
@@ -176,7 +196,7 @@ nav ul {
 
 #shape {
     background-color: 353535;
-    height: 350px;
+    height: 300px;
     width: 300px;
     text-align: center;
     border: #ff6b6b solid 3px;
@@ -187,7 +207,7 @@ nav ul {
 
 #truck, #roda {
     background-color: #353535;
-    height: 350px;
+    height: 300px;
     width: 300px;
     text-align: center;
     border: #ff6b6b solid 3px;
@@ -266,6 +286,11 @@ iframe {
     display: flex;
     align-items: center;
     font-size: 25px;
+}
+
+.materias a{
+    text-decoration: none;
+    color: black;
 }
 
 .materia1 {
@@ -396,9 +421,10 @@ iframe {
     background-color: #ff6b6b;
 }
 
-.fazer_login {
+.aa {
     height: 400px;
 }
+
 
 /* HISTÓRIA SKATE */
 
@@ -409,6 +435,7 @@ iframe {
 
 .historia h1 {
     text-align: center;
+    padding-bottom: 60px;
 }
 
 .historia p {
@@ -421,21 +448,26 @@ iframe {
     text-align: center;
 }
 
-.par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
+.par_2, .par_4, .par_6, .par_8, .par_10, .par_12 , .par_14{
     float: left;
     text-align: center;
 }
 
 .historia img {
-    height: 280px;
-   
+    height: 300px;
+    max-width: 500px;
 }
 
 .img_hist2, .img_hist3, .img_hist4, .img_hist5, .img_hist6, .img_hist7, .img_hist8, .img_hist9, .img_hist10, .img_hist11, .img_hist12, .img_hist13, .img_hist14 {
     padding-top: 110px;
 }
 
-.par_3, .par_5, .par_7, .par_9, .par_11, .par_13, .par_2, .par_4, .par_6, .par_8, .par_10, .par_12 {
+
+.img_hist4{
+    padding-left: 200px;
+}
+
+.par_3, .par_5, .par_7, .par_9, .par_11, .par_13, .par_2, .par_4, .par_6, .par_8, .par_10, .par_12 , .par_14{
     padding-top: 140px;
 }
 
@@ -582,7 +614,7 @@ iframe {
     height: 625px;
     width: 250px;
     background-color: #353535;
-    border-right: 6px solid #d2dae2;
+    border-right: 6px solid #ff6b6b;
     text-align: center;
     float: left;
 }
@@ -605,7 +637,38 @@ iframe {
     text-align: center;
 }
 
-.jogo h1{
+#gameskate h1{
     margin: 0;
-   
+    text-align: center;
+}
+
+#regras{
+  font-size: 20px;
+}
+
+#gameskate img{
+    height: 400px;
+    
+}
+
+#gameskate{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  padding-top: 30px;
+    background-color: #d2dae2;
+    height: 95vh;
+   text-align: center;
+}
+
+#gameskate button{
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: #353535;
+    color: white;
+}
+
+#jogo{
+    font-size: 20px;
 }
