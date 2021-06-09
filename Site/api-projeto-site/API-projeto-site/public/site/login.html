@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Sobre</title>
-<link rel="stylesheet" href="css/css.css">
-<script src="../funcoes.js"></script>
+    <title>Faça seu login</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="../funcoes.js"></script>
+    <link rel="icon" href="imgs/logo.gif">
 </head>
 
 <body class="fundo_log">
@@ -26,8 +27,9 @@
                 Senha:
                 <input type="password" class="input-padrao" name="senha">
                 <br>
-                
-                <span class="btn_logg"><button onclick="entrar()" id="btn_entrar" class="btn-green">Entrar</button></span>
+
+                <span class="btn_logg"><button onclick="entrar()" id="btn_entrar"
+                        class="btn-green">Entrar</button></span>
             </form>
             <div class="cadas"> Já tem uma conta? Clique aqui!</div>
         </div>
@@ -50,7 +52,7 @@
                 resposta.json().then(json => {
 
                     sessionStorage.login_usuario_meuapp = json.idUsuario;
-                    sessionStorage.nome_usuario_meuapp = json.senha;
+                    sessionStorage.nome_usuario_meuapp = json.NomeUsuario;
 
                     window.location.href = 'minigame.html';
                 });

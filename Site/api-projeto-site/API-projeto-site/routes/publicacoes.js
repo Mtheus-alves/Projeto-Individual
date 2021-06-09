@@ -60,7 +60,8 @@ router.get('/:idUsuario', function (req, res, next) {
     dataManobra
     FROM progresso
     INNER JOIN cadastro
-    ON progresso.fkUsuario = ${idUsuario}
+    ON fkUsuario = ${idUsuario}
+     where idUsuario = ${idUsuario} 
     ORDER BY progresso.id DESC`;
 
     sequelize.query(instrucaoSql, {

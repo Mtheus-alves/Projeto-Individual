@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Sobre</title>
+    <title>Cadastre-se</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="icon" href="imgs/logo.gif">
+    
 </head>
 
 <body class="fundo_cad">
@@ -14,7 +16,7 @@
         <div class="cadastro">
 
             <h1>Cadastre-se
-                <img src="imgs/logo.gif" alt="">
+               <a href="index.html"> <img src="imgs/logo.gif" alt=""></a>
             </h1>
 
             <br>
@@ -31,7 +33,7 @@
             <br>
             <button onclick="cadastrar()">Cadastrar-se</button>
             <br>
-            <div class="login"> Já tem uma conta? Clique aqui!</div>
+           <a href="login.html"><div class="jtconta"> Já tem uma conta? Clique aqui!</div></a> 
         </div>
     </center>
 </body>
@@ -43,7 +45,19 @@
 
     function cadastrar() {
         // aguardar();
-        var formulario = new URLSearchParams(new FormData(form_cadastro));
+       var valida_email = (id_email.value).indexOf('@','.');
+       var valida_senha = (id_senha.value).length
+
+       if (valida_email == -1) {
+           alert('Insira um email válido')
+       }
+
+       if(valida_senha <= 7 ){
+           alert('Senha muito curta')
+       }
+
+else{
+    var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
             body: formulario
@@ -77,5 +91,7 @@
         img_aguarde.style.display = 'none';
         div_erro.style.display = 'block';
     }
+}
+      
 
 </script>

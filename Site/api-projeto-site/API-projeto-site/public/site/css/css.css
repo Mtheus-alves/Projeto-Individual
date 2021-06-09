@@ -14,7 +14,7 @@ body {
     font-size: 20px;
 }
 .redes{
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .footer a{
@@ -137,6 +137,10 @@ nav ul {
 }
 
 /* PAG SKT IDEAL */
+
+#perguntas{
+padding-top: 20px;
+}
 
 .skt_ideial {
     text-align: center;
@@ -472,6 +476,12 @@ iframe {
 }
 
 /* CADASTRO */
+
+.cadastro a{
+    text-decoration: none;
+    color: white;
+  
+}
 
 .fundo_cad {
     background-image: url(../imgs/fundologin.jpg);
